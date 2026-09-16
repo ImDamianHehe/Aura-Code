@@ -20,9 +20,6 @@ helloButton.onClick: {
     console.print: "Hello from AuraSK!"
 }
 ```
-
-AuraSK currently compiles to Java internally and uses Swing as its desktop GUI backend.
-
 ---
 
 ## ✨ Features
@@ -39,75 +36,6 @@ AuraSK currently compiles to Java internally and uses Swing as its desktop GUI b
 * 🧪 AuraSK-specific compiler errors
 * 💻 Standalone `aurask` command-line tool
 * 🛠️ AuraSK Studio IDE
-* ☕ Java/Swing used internally, without exposing generated Java to the developer
-
----
-
-# 🚀 Getting Started
-
-## Requirements
-
-AuraSK currently requires:
-
-* Java JDK 25 or newer
-* Linux for the current installer workflow
-* A terminal for using the CLI
-
-Check your Java version:
-
-```bash
-java --version
-```
-
-Check that the Java compiler is available:
-
-```bash
-javac --version
-```
-
----
-
-# 📦 Installing AuraSK
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/AuraSK.git
-cd AuraSK
-```
-
-Build and install the CLI:
-
-```bash
-chmod +x sk.sh
-./sk.sh
-```
-
-The installer places the AuraSK runtime in:
-
-```text
-~/.local/aurask/
-```
-
-and the executable in:
-
-```text
-~/.local/bin/
-```
-
-Make sure `~/.local/bin` is in your `PATH`.
-
-Then test the installation:
-
-```bash
-aurask --version
-```
-
-You should see something similar to:
-
-```text
-AuraSK 0.1.0
-```
 
 ---
 
@@ -131,11 +59,7 @@ AuraSK will:
 
 1. Read the `.aurask` source.
 2. Validate the AuraSK syntax.
-3. Generate Java internally.
-4. Compile the generated Java.
-5. Launch the application.
-
-The generated Java implementation is an internal detail and is not part of the language the developer writes.
+3. Launch the application.
 
 ---
 
